@@ -1,0 +1,35 @@
+footer-app{
+  .container-footer{
+    background: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    .social-media{
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 1rem 0;
+      a{
+        font-size: 1.5rem;
+        color: rgba(0, 0, 0, 0.652);
+        transition: 0.2s;
+        &:hover{
+          color: black;
+        }
+      }
+    }
+    img{
+      width: 150px;
+    }
+  }
+  @media only screen and (max-width: 600px){
+    .container-footer{
+      img{
+        width: 120px;
+      }
+      p{
+        padding: 0 3rem;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

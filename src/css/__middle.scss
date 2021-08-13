@@ -1,0 +1,13 @@
+.middle{
+  text-align: center;
+  margin-top: 8rem;
+  color: rgb(233, 159, 22);
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .middle{
+    font-size: 1.5rem;
+  }
+} 

@@ -1,0 +1,39 @@
+header{
+  background: #fff;
+  a{
+    color: rgb(255, 81, 0);
+    text-transform: capitalize;
+    transition: 0.2s ease-in-out;
+    &:hover{
+      color: green;
+    }
+  }
+  span{
+    background: rgb(0, 148, 37);
+    padding: 5px 13px;
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+  img{
+    width: 150px;
+    cursor: pointer;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  header{
+    .container{
+      padding: 2rem;
+    }
+    a{
+      font-size: 1rem;
+    }
+    span{
+      font-size: 1.2rem;
+    }
+
+    img{
+      width: 125px;
+    }
+  }
+}

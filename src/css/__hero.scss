@@ -1,0 +1,122 @@
+.hero{
+  height: 530px;
+  background: #fff;
+  &__btn{
+   
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    border: none;
+    box-shadow: -7px 18px 28px -11px rgba(255,197,135,0.75);
+    cursor: pointer;
+    a{
+      background: orange;
+      color: #fff;
+      padding: 0.8rem 2rem;
+      border-radius: 5px;
+      transition: ease-in-out 0.3s;
+      display: block;
+      &:hover{
+        background: orangered;
+        transform: scale(0.90);
+      }
+    }
+  }
+  &__content{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto ;
+    justify-content: center;
+    padding-bottom: 5rem;
+    h1{
+      text-transform: capitalize;
+      color: rgba(255, 132, 0, 0.624);
+      font-size: 3.6rem;
+      font-weight: 700;
+      line-height: 1.2;
+      font-family: 'Pacifico', cursive;
+      letter-spacing: 5px;
+      margin-top: 6.5rem;
+      
+    }
+    h2{
+      margin: 1.3rem 0;
+      color: rgba(179, 94, 4, 0.57);
+      text-transform: capitalize;
+    }
+    img{
+      width: 620px;
+      display: block;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .hero{
+    height: 100%;
+  //  border: red solid 1px;
+    &__content{
+      padding: 0 1rem;
+      h1{
+        font-size: 3rem;
+      }
+      img{
+        width: 450px;
+      }
+    }
+    &__btn{
+      font-size: 0.8rem;
+      a{
+        padding: 0.4rem 1rem;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .hero{
+    
+    &__content{
+      flex: 2;
+      flex-direction: column-reverse;
+      align-items: center;
+      text-align: center;
+      padding-bottom: 0;
+      .text-wrap{
+      //  border: red solid 1px;
+        h1{
+          font-size: 2.3rem;
+          padding: 0 5rem;
+          margin-top: 1rem;
+        }
+        h2{
+          font-size: 1.4rem;
+          padding: 0 5rem;
+        }
+      }
+      img{
+        width: 300px;
+      }
+
+    }
+  }
+} 
+@media only screen and (max-width: 600px) {
+  .hero{
+    //border: red solid 1px;
+    &__content{
+      .text-wrap{
+        h1{
+          padding: 0;
+          font-size: 2rem;
+        }
+        h2{
+          padding: 0;
+          font-size: 1rem;
+        }
+      }
+      
+    }
+  }
+} 
+
+

@@ -1,0 +1,109 @@
+save-detail{
+  display: block;
+  position: fixed;
+  top: 0;
+  background: #fff;
+  height: 100%;
+  overflow-y: auto;
+  width: 100%;
+  .detail{
+    max-width: 800px;
+    margin: 7rem auto;
+    border: rgba(255, 174, 0, 0.323) solid 1px;
+    padding: 1rem;
+    box-shadow: 3px 3px 5px 0px rgba(194, 102, 15, 0.35);
+   &__title{
+     margin: 1rem 0;
+     p{
+      margin: 10px 0; 
+     }
+   }
+   &__bahan{
+     margin: 1rem 0;
+     p{
+       margin: 10px 0;
+      .fas{
+        color: rgba(85, 255, 0, 0.316);
+        margin-right: 10px;
+      }
+     }
+   }
+
+   &__caraBuat{
+     margin: 1rem 0;
+     
+     p{
+       margin: 1rem 0;
+       border-bottom: rgba(255, 166, 0, 0.357) solid 1px;
+       line-height: 1.5;
+     }
+   }
+   &__dificulty{
+    
+    display: flex;
+    gap: 0.7rem;
+    p{
+      background: rgba(255, 174, 0, 0.234);
+      padding: 6px 15px;
+      font-size: 0.8rem;
+    }
+   }
+
+   
+   .btn-simpan{
+     border: none;
+     background:rgb(35, 160, 10);
+     padding: 0.7rem 1rem;
+     color: #fff;
+     font-weight: 600;
+     letter-spacing: 1px;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: ease-in-out 0.3s;
+     box-shadow: 3px 3px 5px 0px rgba(194, 102, 15, 0.35);
+     &:hover{
+       background: green;
+       transform: scale(0.90);
+     }
+   }
+  }
+  .btn-kembali{
+    position: absolute;
+    top: 3rem;
+    left: 5rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    border: none;
+    background: orange;
+    box-shadow: 3px 3px 5px 0px rgba(194, 102, 15, 0.35);
+    color: #fff;
+    // font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    &:hover{
+      background: rgb(241, 20, 4);
+      transform: scale(0.90);
+      color: rgb(248, 242, 240);
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  save-detail{
+    .btn-kembali{
+      left: 1rem;
+      padding: 0.7rem 1.4rem;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+    .detail{
+      &__dificulty{
+        gap: 10px;
+        p{
+          font-size: 0.8rem;
+          padding: 5px;
+        }
+      }
+    }
+  }
+} 
