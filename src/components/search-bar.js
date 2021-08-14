@@ -1,3 +1,4 @@
+import { search } from './fontAwesome.js'
 class SearchBar extends HTMLElement {
   connectedCallback () {
     this.render()
@@ -17,7 +18,7 @@ class SearchBar extends HTMLElement {
     <div class="search">
       <form class="search__form">
         <input class="search__input" type="text" placeholder="cari resepmu disini" required>
-        <button class="search__btn">cari</button>
+        <button class="search__btn">${search}</button>
       </form>
     </div>
     `

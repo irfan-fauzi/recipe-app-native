@@ -1,5 +1,5 @@
 import { library, icon } from '@fortawesome/fontawesome-svg-core'
-import { faPizzaSlice, faAlignLeft, faCheck, faArrowAltCircleLeft } from '@fortawesome/free-solid-svg-icons'
+import { faPizzaSlice, faAlignLeft, faCheck, faArrowAltCircleLeft, faSearch } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin, faMediumM } from '@fortawesome/free-brands-svg-icons'
 import { faClock, faTrashAlt, faBookmark } from '@fortawesome/free-regular-svg-icons'
 
@@ -13,7 +13,8 @@ library.add(
   faBookmark,
   faGithub,
   faLinkedin,
-  faMediumM
+  faMediumM,
+  faSearch
 
 )
 
@@ -27,3 +28,4 @@ export const bookMark = icon({ prefix: 'far', iconName: 'bookmark' }).html
 export const github = icon({ prefix: 'fab', iconName: 'github' }).html
 export const linkedin = icon({ prefix: 'fab', iconName: 'linkedin' }).html
 export const medium = icon({ prefix: 'fab', iconName: 'medium-m' }).html
+export const search = icon({ prefix: 'fas', iconName: 'search' }).html

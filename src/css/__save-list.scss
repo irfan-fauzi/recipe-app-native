@@ -4,6 +4,13 @@ save-list{
   margin: 1rem auto 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 10px;
+  gap: 1.6rem;
   padding-bottom: 4rem;
+}
+
+@media only screen and (max-width: 1024px){
+  save-list{
+    
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
 }

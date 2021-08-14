@@ -53,3 +53,13 @@ recipe-item{
     }
   }
 }
+
+@media only screen and (max-width: 1024px){
+  recipe-item{
+    .recipe-item{
+      .title-recipe{
+        margin-top: 0;
+      }
+    }
+  }
+}

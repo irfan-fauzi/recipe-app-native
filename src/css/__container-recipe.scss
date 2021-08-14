@@ -1,6 +1,12 @@
 .container-recipe{
   position: relative;
 }
+
+@media only screen and (max-width: 1024px){
+  .container-recipe{
+    padding: 0 1rem;
+  }
+}
 @media only screen and (max-width: 600px) {
   .container-recipe{
     padding: 0 1rem;
