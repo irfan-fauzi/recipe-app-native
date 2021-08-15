@@ -8,7 +8,7 @@ Aplikasi web untuk mencari resep masakan indonesia yang dibuat menggunakan Web C
 ## cara instal
 
 1. download / clone repo ini kemudian ketik `npm install` di code editor
-2. jalankan perintah `npm start` untuk menjalankan Aplikasinya
+2. jalankan perintah `npm start-dev` untuk menjalankan Aplikasinya
 
 ## Fitur
 
