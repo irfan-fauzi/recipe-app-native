@@ -13,7 +13,7 @@ import axios from 'axios'
 
 class RecipeApp {
   constructor () {
-    this.baseUrl = 'https://masak-apa.tomorisakura.vercel.app/api'
+    this.baseUrl = 'https://corsproxy.io/?' + encodeURIComponent('https://masak-apa.tomorisakura.vercel.app/api');
     this.PROXY_URL = 'https://cors.bridged.cc/'
     this.searchBar = document.querySelector('search-bar')
     this.recipeList = document.querySelector('recipe-list')
@@ -33,7 +33,7 @@ class RecipeApp {
   }
 
   getDataOnLoad () {
-    axios.get(`${this.PROXY_URL + this.baseUrl}/recipes`)
+    axios.get(this.baseUrl)
       .then(res => {
         const dataRecipe = res.data.results
         this.renderRecipeList(dataRecipe)
@@ -44,7 +44,7 @@ class RecipeApp {
   }
 
   getDataDetail (key) {
-    axios.get(`${this.PROXY_URL + this.baseUrl}/recipe/${key}`)
+    axios.get(`${this.baseUrl}/recipe/${key}`)
       .then(res => {
         const dataRecipe = res.data.results
         this.renderRecipeDetail(dataRecipe)
