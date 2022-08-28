@@ -33,7 +33,7 @@ class RecipeApp {
   }
 
   getDataOnLoad () {
-    axios.get(this.baseUrl)
+      axios.get(`${this.baseUrl}/recipes`)
       .then(res => {
         const dataRecipe = res.data.results
         this.renderRecipeList(dataRecipe)
